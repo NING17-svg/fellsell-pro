@@ -65,3 +65,4 @@ A growth-relevant task is not complete until `GROWTH_LOG.md` is updated.
 - `AGENTS.md`: stable project and growth rules.
 - `CONTENT_INDEX.md`: page inventory and page-level SEO/GEO/conversion map.
 - `GROWTH_LOG.md`: chronological growth-relevant change log.
+

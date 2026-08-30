@@ -6,6 +6,14 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-08-30 - Adsterra six-unit codes integrated
+
+- Task: Populate the fixed Adsterra ad units in `src/data/ads.ts` with the six real codes from the Adsterra publisher dashboard.
+- Files changed: `src/data/ads.ts` and this log.
+- URLs affected: No URL changes; ad values are consumed by the existing fixed ad modules only.
+- Ad baseline: `native-banner`, `banner-728x90`, `banner-468x60`, `banner-320x50`, `banner-160x600`, and `smartlink` now hold real publisher codes; the standard ad slots and the empty-value contract remain unchanged.
+- Verification: `npm run verify` plus the read-only Adsterra completion validator before registry terminal commit.
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.

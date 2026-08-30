@@ -5,10 +5,18 @@ export interface LocalizedNavigationItem {
   labels: Record<string, string>;
 }
 
+// Fell and Sell primary navigation — Site Plan IA: Start here, Dungeons, Shop,
+// Game info. Order matches the Site Plan Primary Navigation block.
 export const primaryNavigation: LocalizedNavigationItem[] = [
-  { href: "/wiki", labels: { "en-US": "Wiki" } },
-  { href: "/guides", labels: { "en-US": "Guides" } },
-  { href: "/release-date", labels: { "en-US": "Release Date" } },
+  { href: "/beginner-guide", labels: { "en-US": "Beginner Guide" } },
+  { href: "/gameplay-loop", labels: { "en-US": "Gameplay Loop" } },
+  { href: "/dungeons", labels: { "en-US": "Dungeons" } },
+  { href: "/shop", labels: { "en-US": "Shop" } },
+  { href: "/release-date-platforms-price", labels: { "en-US": "Release & Price" } },
+  { href: "/system-requirements", labels: { "en-US": "System Requirements" } },
+  { href: "/demo", labels: { "en-US": "Demo" } },
+  { href: "/multiplayer-and-co-op", labels: { "en-US": "Multiplayer" } },
+  { href: "/mods", labels: { "en-US": "Mods" } },
   { href: "/faq", labels: { "en-US": "FAQ" } },
 ];
 

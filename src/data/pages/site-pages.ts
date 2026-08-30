@@ -14,20 +14,20 @@ export const sitePages: PageContent[] = [
     h1: `${site.gameName} FAQ`,
     seoTitle: `${site.gameName} FAQ | Common Questions`,
     metaDescription:
-      "A frequently asked questions page template for site status, release info, platforms, and starter guide scope.",
+      "Common Fell and Sell questions about release, platform, gameplay, wiki scope, and guide depth.",
     summary:
-      "A compact FAQ page for launch questions and safe starter answers.",
+      "Short answers to the most common Fell and Sell questions about the launch, Steam availability, demo, multiplayer status, and guide scope.",
     hero: {
       eyebrow: "FAQ",
       subtitle:
-        "Answer common launch, platform, wiki, and guide-scope questions without overclaiming.",
+        "Quick answers to release, platform, wiki, and guide questions without overclaiming.",
       ctas: [
-        { label: "Release Info", href: "/release-date" },
+        { label: "Release and Price", href: "/release-date-platforms-price" },
         { label: "Contact", href: "/contact" },
       ],
     },
     quickAnswer:
-      "This FAQ should answer only what the site can support with official facts or clear internal policy.",
+      "Every answer below is sourced to official facts or clear site policy so the FAQ stays accurate as launch facts change.",
     keyFacts: [
       { label: "FAQ source", value: "Official facts or site policy" },
       { label: "Schema", value: "FAQ JSON-LD enabled" },
@@ -43,16 +43,16 @@ export const sitePages: PageContent[] = [
       },
     ],
     faqIds: [
-      "what-is-this-site",
-      "is-official",
-      "release-date-known",
-      "platforms-known",
-      "guide-depth",
+      "home-when-release",
+      "home-single-player",
+      "home-demo",
+      "home-mods",
+      "home-mac-linux",
     ],
-    relatedPageIds: ["wiki", "guides", "release-date", "about"],
+    relatedPageIds: ["wiki", "guides", "fixed-release-date-platforms-price-en-us", "about"],
     schemaTypes: ["FAQPage", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-08-30",
   },
   {
     id: "about",
@@ -66,17 +66,17 @@ export const sitePages: PageContent[] = [
     h1: `About ${site.name}`,
     seoTitle: `About ${site.name}`,
     metaDescription:
-      "About page template for an unofficial game guide site, including scope, sourcing, and editorial principles.",
+      "About Fell and Sell Guide: an unofficial reference hub for the dungeon roguelite and shopkeeper game by Art Games Studio S.A. and PlayWay S.A.",
     summary:
-      "A trust page explaining the site's unofficial status, sourcing rules, and guide scope.",
+      "Why this Fell and Sell reference exists, how facts are sourced, and what readers should expect from every page.",
     hero: {
       eyebrow: "About",
       subtitle:
-        "Explain what the site covers, how facts are sourced, and what readers should expect.",
+        "Scope, sourcing, and editorial principles for the Fell and Sell Guide.",
       ctas: [{ label: "Contact", href: "/contact" }],
     },
     quickAnswer:
-      `${site.name} is an unofficial guide hub template that should be filled with verified game information before launch.`,
+      `${site.name} is an unofficial reference hub for Fell and Sell by Art Games Studio S.A. and PlayWay S.A. Facts are sourced to official pages and clearly dated.`,
     keyFacts: [
       { label: "Status", value: "Unofficial fan guide" },
       { label: "Editorial rule", value: "Verified facts first" },
@@ -88,21 +88,21 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Mission",
         body:
-          "Help players find clear, well-structured information without pretending the site knows more than official sources support.",
+          "Help players find clear, well-structured information about Fell and Sell without pretending the site knows more than official sources support.",
       },
       {
         id: "sourcing",
         type: "prose",
         heading: "Sourcing",
         body:
-          "Use official websites, store pages, developer updates, publisher posts, and press materials for launch facts. Mark uncertain areas as pending instead of filling gaps with guesses.",
+          "Use the official Steam store page, the Steambase info page, the Fell and Sell community wiki, and reputable guide sources for launch facts. Mark uncertain areas as pending instead of filling gaps with guesses.",
       },
     ],
-    faqIds: ["what-is-this-site", "is-official"],
+    faqIds: ["home-when-release", "home-single-player"],
     relatedPageIds: ["contact", "privacy-policy", "terms"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-08-30",
   },
   {
     id: "contact",
@@ -116,9 +116,9 @@ export const sitePages: PageContent[] = [
     h1: "Contact",
     seoTitle: `Contact | ${site.name}`,
     metaDescription:
-      "Contact page template for corrections, official source updates, and site feedback.",
+      "How to reach the Fell and Sell Guide team for corrections, official source updates, and site feedback.",
     summary:
-      "A trust page for corrections, source updates, and site feedback.",
+      "How to send corrections, source updates, and feedback about the Fell and Sell Guide.",
     hero: {
       eyebrow: "Contact",
       subtitle:
@@ -126,11 +126,11 @@ export const sitePages: PageContent[] = [
       ctas: [{ label: "Read About", href: "/about" }],
     },
     quickAnswer:
-      "Replace this page with a working contact method before launch, such as an email address or contact form.",
+      "Email corrections and source links to support@fellsell.pro so the team can verify and update the relevant page.",
     keyFacts: [
       { label: "Primary use", value: "Corrections and feedback" },
-      { label: "Launch requirement", value: "Add a real contact method" },
-      { label: "Response", value: "Set expectations clearly" },
+      { label: "Email", value: "support@fellsell.pro" },
+      { label: "Response", value: "Best effort, no SLA" },
     ],
     modules: [
       {
@@ -138,21 +138,21 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Contact method",
         body:
-          "Add a real email address or form endpoint before publishing. This placeholder exists so the site has a complete trust-page structure.",
+          "Email corrections, official source links, and feedback to support@fellsell.pro. Do not request private account information or game account credentials.",
       },
       {
         id: "corrections",
         type: "prose",
         heading: "Corrections",
         body:
-          "Invite readers to send official source links when facts change. Do not ask for private account information or game account credentials.",
+          "Invite readers to send official source links when facts change. Source-aware updates keep every page aligned with the latest Steam store page and Fell and Sell community wiki entries.",
       },
     ],
     faqIds: [],
     relatedPageIds: ["about", "privacy-policy", "terms"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-08-30",
   },
   {
     id: "privacy-policy",
@@ -166,9 +166,9 @@ export const sitePages: PageContent[] = [
     h1: "Privacy Policy",
     seoTitle: `Privacy Policy | ${site.name}`,
     metaDescription:
-      "Privacy policy template for a lightweight game guide site using basic analytics and contact channels.",
+      "Privacy policy for the Fell and Sell Guide, covering analytics, logs, contact messages, and advertising when enabled.",
     summary:
-      "A starter privacy policy page for analytics, logs, and contact messages.",
+      "How the Fell and Sell Guide handles analytics, logs, and contact messages.",
     hero: {
       eyebrow: "Privacy",
       subtitle:
@@ -176,7 +176,7 @@ export const sitePages: PageContent[] = [
       ctas: [{ label: "Terms", href: "/terms" }],
     },
     quickAnswer:
-      "This page should be reviewed before launch and updated to match the deployed site's analytics, hosting, and contact setup.",
+      "The Fell and Sell Guide does not include accounts, comments, or payments. If GA4 is configured, analytics may collect aggregate usage information; if advertising is enabled, the third-party advertising provider may process technical request data and use cookies or similar technologies to deliver and measure ads.",
     keyFacts: [
       { label: "Analytics", value: "GA4 only when configured" },
       { label: "Accounts", value: "No user accounts in V1" },
@@ -195,7 +195,7 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Contact messages",
         body:
-          "If a contact method is added, messages may include the information visitors choose to send. Do not request sensitive personal information.",
+          "If a visitor emails support@fellsell.pro, the message may include the information the visitor chose to send. Do not include sensitive personal information in support messages.",
       },
       {
         id: "updates",
@@ -209,7 +209,7 @@ export const sitePages: PageContent[] = [
     relatedPageIds: ["about", "contact", "terms"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-08-30",
   },
   {
     id: "terms",
@@ -223,9 +223,9 @@ export const sitePages: PageContent[] = [
     h1: "Terms of Use",
     seoTitle: `Terms of Use | ${site.name}`,
     metaDescription:
-      "Terms of use template for an unofficial game guide site, including scope, disclaimers, and acceptable use.",
+      "Terms of use for the Fell and Sell Guide, including unofficial status, informational scope, and acceptable use.",
     summary:
-      "A starter terms page for an unofficial guide site.",
+      "Unofficial status, informational scope, and acceptable use for the Fell and Sell Guide.",
     hero: {
       eyebrow: "Terms",
       subtitle:
@@ -233,11 +233,11 @@ export const sitePages: PageContent[] = [
       ctas: [{ label: "Privacy Policy", href: "/privacy-policy" }],
     },
     quickAnswer:
-      "This terms page is a template and should be reviewed before launch for the final site owner and jurisdiction.",
+      "The Fell and Sell Guide is an unofficial reference. Guide information may change as official details are updated; use official sources for final purchase, platform, and release decisions.",
     keyFacts: [
       { label: "Use", value: "Informational guide content" },
       { label: "Official status", value: "Unofficial fan site" },
-      { label: "Review", value: "Update before launch" },
+      { label: "Trademark", value: "Fell and Sell is a trademark of its owner" },
     ],
     modules: [
       {
@@ -245,27 +245,27 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Unofficial site",
         body:
-          "This site is not affiliated with the game publisher, developer, platform holders, or trademark owners unless explicitly stated after launch.",
+          "This site is not affiliated with Art Games Studio S.A., PlayWay S.A., Valve Corporation, or any trademark owner unless explicitly stated. Fell and Sell and all related marks are the property of their respective owners.",
       },
       {
         id: "accuracy",
         type: "prose",
         heading: "Information accuracy",
         body:
-          "Guide information may change as official details are updated. Use official sources for final purchase, platform, and release decisions.",
+          "Guide information may change as official details are updated. Use the Steam store page for AppID 4627110 as the source of truth for purchase, platform, and release decisions.",
       },
       {
         id: "acceptable-use",
         type: "prose",
         heading: "Acceptable use",
         body:
-          "Do not misuse the site, scrape aggressively, interfere with service availability, or submit harmful content through any future contact channel.",
+          "Do not misuse the site, scrape aggressively, interfere with service availability, or submit harmful content through any contact channel.",
       },
     ],
     faqIds: [],
     relatedPageIds: ["about", "contact", "privacy-policy"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-08-30",
   },
 ];

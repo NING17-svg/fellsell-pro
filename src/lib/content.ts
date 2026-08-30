@@ -1,19 +1,21 @@
 import type { FAQItem, PageContent, RouteKind } from "@/types/content";
 import { entityFamilies } from "@/data/entities";
 import { faqItems } from "@/data/faq";
-import { guidePages } from "@/data/pages/guide-pages";
+import { fellsellDungeonPages } from "@/data/pages/fellsell-fixed-dungeon";
+import { fellsellFixedPages } from "@/data/pages/fellsell-fixed";
+import { fellsellFixturePages } from "@/data/pages/fellsell-fixtures";
+import { fellsellShopPages } from "@/data/pages/fellsell-fixed-shop";
 import { homePage } from "@/data/pages/home";
-import { releasePages } from "@/data/pages/release-pages";
 import { sitePages } from "@/data/pages/site-pages";
-import { wikiPages } from "@/data/pages/wiki-pages";
 import { buildEntityPages } from "@/lib/entities";
 import { normalizePath } from "@/lib/localization";
 
 const fixedPages: PageContent[] = [
   homePage,
-  ...wikiPages,
-  ...guidePages,
-  ...releasePages,
+  ...fellsellFixedPages,
+  ...fellsellDungeonPages,
+  ...fellsellShopPages,
+  ...fellsellFixturePages,
   ...sitePages,
 ];
 

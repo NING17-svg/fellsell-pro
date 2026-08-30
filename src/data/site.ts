@@ -24,14 +24,14 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  name: "Template Game Guide",
-  brandMark: "GG",
-  gameName: "Template Game",
-  domain: "example.com",
-  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://example.com").replace(/\/$/, ""),
+  name: "Fell & Sell Guide",
+  brandMark: "F&S",
+  gameName: "Fell & Sell",
+  domain: "fellsell.pro",
+  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://fellsell.pro").replace(/\/$/, ""),
   description:
-    "A neutral game guide hub template for launch pages, wiki notes, guides, release information, and FAQs.",
-  tagline: "Guides, wiki notes, release info, and launch FAQs in one clean hub.",
+    "An unofficial Fell & Sell (Art Games Studio S.A. / PlayWay S.A.) reference covering release status, dungeon runs, extraction, altars and builds, weapons, crafting, the Living Forest, shop pricing, furniture buffs, and reinvestment for US English players.",
+  tagline: "Fell & Sell dungeon and shop reference, run and economy guidance for US players.",
   primaryLocale: "en-US",
   locales: [
     {
@@ -53,16 +53,16 @@ export const site: SiteConfig = {
       },
     },
   ],
-  author: "Template Game Guide",
+  author: "Fell & Sell Guide",
   gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "",
   bingSiteAuthCode: process.env.NEXT_PUBLIC_BING_SITE_AUTH_CODE || "",
   officialSources: [
     {
-      label: "Official website",
-      href: "https://example.com",
-      description: "Replace this with the game publisher or developer website.",
+      label: "Fell & Sell Steam store page (AppID 4627110, Art Games Studio S.A. / PlayWay S.A.)",
+      href: "https://store.steampowered.com/app/4627110/Fell__Sell",
+      description: "Official store listing with release status, system requirements, and feature list.",
     },
   ],
   disclaimer:
-    "This is an unofficial fan guide template. Replace placeholder facts with official sources before launch.",
+    "This is an unofficial Fell & Sell fan reference. Current-game facts are sourced from the official Steam store page as of 2026-08-30. Unannounced details are labeled with dated status statements.",
 };

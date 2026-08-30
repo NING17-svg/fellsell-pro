@@ -1,0 +1,272 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "fixed-beginner-guide-en-us",
+    "translationKey": "beginner-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/beginner-guide",
+    "alternates": {
+      "en-US": "/beginner-guide"
+    }
+  },
+  {
+    "id": "contact",
+    "translationKey": "contact",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/contact",
+    "alternates": {
+      "en-US": "/contact"
+    }
+  },
+  {
+    "id": "fixed-demo-en-us",
+    "translationKey": "demo",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/demo",
+    "alternates": {
+      "en-US": "/demo"
+    }
+  },
+  {
+    "id": "fixed-dungeons-hub-en-us",
+    "translationKey": "dungeons-hub",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/dungeons",
+    "alternates": {
+      "en-US": "/dungeons"
+    }
+  },
+  {
+    "id": "fixed-altars-and-builds-en-us",
+    "translationKey": "altars-and-builds",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/dungeons/altars-and-builds",
+    "alternates": {
+      "en-US": "/dungeons/altars-and-builds"
+    }
+  },
+  {
+    "id": "fixed-crafting-and-gear-en-us",
+    "translationKey": "crafting-and-gear",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/dungeons/crafting-and-gear",
+    "alternates": {
+      "en-US": "/dungeons/crafting-and-gear"
+    }
+  },
+  {
+    "id": "fixed-extraction-and-death-penalty-en-us",
+    "translationKey": "extraction-and-death-penalty",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/dungeons/extraction-and-death-penalty",
+    "alternates": {
+      "en-US": "/dungeons/extraction-and-death-penalty"
+    }
+  },
+  {
+    "id": "fixed-dungeon-guide-en-us",
+    "translationKey": "dungeon-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/dungeons/guide",
+    "alternates": {
+      "en-US": "/dungeons/guide"
+    }
+  },
+  {
+    "id": "fixed-living-forest-foraging-en-us",
+    "translationKey": "living-forest-foraging",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/dungeons/living-forest-foraging",
+    "alternates": {
+      "en-US": "/dungeons/living-forest-foraging"
+    }
+  },
+  {
+    "id": "fixed-quest-board-en-us",
+    "translationKey": "quest-board",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/dungeons/quest-board",
+    "alternates": {
+      "en-US": "/dungeons/quest-board"
+    }
+  },
+  {
+    "id": "fixed-weapons-en-us",
+    "translationKey": "weapons",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/dungeons/weapons",
+    "alternates": {
+      "en-US": "/dungeons/weapons"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "fixed-gameplay-loop-en-us",
+    "translationKey": "gameplay-loop",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/gameplay-loop",
+    "alternates": {
+      "en-US": "/gameplay-loop"
+    }
+  },
+  {
+    "id": "guides",
+    "translationKey": "guides",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides",
+    "alternates": {
+      "en-US": "/guides"
+    }
+  },
+  {
+    "id": "fixed-mods-en-us",
+    "translationKey": "mods",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/mods",
+    "alternates": {
+      "en-US": "/mods"
+    }
+  },
+  {
+    "id": "fixed-multiplayer-and-co-op-en-us",
+    "translationKey": "multiplayer-and-co-op",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/multiplayer-and-co-op",
+    "alternates": {
+      "en-US": "/multiplayer-and-co-op"
+    }
+  },
+  {
+    "id": "privacy-policy",
+    "translationKey": "privacy-policy",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/privacy-policy",
+    "alternates": {
+      "en-US": "/privacy-policy"
+    }
+  },
+  {
+    "id": "fixed-release-date-platforms-price-en-us",
+    "translationKey": "release-platforms-price",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/release-date-platforms-price",
+    "alternates": {
+      "en-US": "/release-date-platforms-price"
+    }
+  },
+  {
+    "id": "fixed-shop-hub-en-us",
+    "translationKey": "shop-hub",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/shop",
+    "alternates": {
+      "en-US": "/shop"
+    }
+  },
+  {
+    "id": "fixed-shop-layout-and-furniture-buffs-en-us",
+    "translationKey": "shop-layout-and-furniture-buffs",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/shop/layout-and-furniture-buffs",
+    "alternates": {
+      "en-US": "/shop/layout-and-furniture-buffs"
+    }
+  },
+  {
+    "id": "fixed-shop-pricing-and-demand-en-us",
+    "translationKey": "shop-pricing-and-demand",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/shop/pricing-and-demand",
+    "alternates": {
+      "en-US": "/shop/pricing-and-demand"
+    }
+  },
+  {
+    "id": "fixed-shop-upgrades-and-progression-en-us",
+    "translationKey": "shop-upgrades-and-progression",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/shop/upgrades-and-progression",
+    "alternates": {
+      "en-US": "/shop/upgrades-and-progression"
+    }
+  },
+  {
+    "id": "fixed-system-requirements-en-us",
+    "translationKey": "system-requirements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/system-requirements",
+    "alternates": {
+      "en-US": "/system-requirements"
+    }
+  },
+  {
+    "id": "terms",
+    "translationKey": "terms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/terms",
+    "alternates": {
+      "en-US": "/terms"
+    }
+  },
+  {
+    "id": "wiki",
+    "translationKey": "wiki",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/wiki",
+    "alternates": {
+      "en-US": "/wiki"
+    }
+  }
+]

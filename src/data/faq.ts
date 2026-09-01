@@ -317,6 +317,26 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "internal",
   },
+  {
+    id: "altars-shrink-midas",
+    question: "What does the Shrink + Midas Touch cross-altar synergy do?",
+    answer:
+      "Shrink keeps the player alive through a long loot-heavy descent by shrinking the player's hit volume, while Midas Touch raises the value of the haul once it is banked. The two effects compound across a single run instead of stacking the same effect twice. The combination fits a planned loot-heavy descent where the player can afford a deeper floor.",
+    pageIds: ["fixed-altars-and-builds-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "internal",
+  },
+  {
+    id: "altars-skip-drawback",
+    question: "When should I skip an offered altar prayer?",
+    answer:
+      "Skip a drawback-carrying prayer when the run's unbanked haul is already at risk or when the prayer's downside does not match the run's archetype. Pass on depressed during a fast-weapon run, pass on manic during a heavy-weapon run, and pass on any drawback-carrying prayer near the descent boundary.",
+    pageIds: ["fixed-altars-and-builds-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "internal",
+  },
   // Weapons
   {
     id: "weapons-fast-heavy",
@@ -401,6 +421,26 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "internal",
   },
+  {
+    id: "forest-versus-descent",
+    question: "When is a Living Forest foraging trip more efficient than a short dungeon descent?",
+    answer:
+      "A forest trip is more efficient during a thunderstorm with the psychedelic mushroom season active. A short dungeon descent is more efficient on a calm day with no mushroom season, when the descent yields a wider mix of materials plus a chance at gear or an altar pull. The efficiency comparison depends on the value window of the active event.",
+    pageIds: ["fixed-living-forest-foraging-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "internal",
+  },
+  {
+    id: "forest-when-skip",
+    question: "When should I skip a Living Forest foraging trip entirely?",
+    answer:
+      "Skip the forest when a dungeon-featuring Quest Board feat is pending, when shop stock is already over-supplied with foraged materials, on a calm day with no thunderstorm and no mushroom season, or when health and potions are below the dungeon-side risk-threshold check.",
+    pageIds: ["fixed-living-forest-foraging-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "internal",
+  },
   // Shop hub
   {
     id: "shop-reading-order",
@@ -443,6 +483,16 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "internal",
   },
+  {
+    id: "pricing-first-cycle",
+    question: "What is the right first-cycle pricing move in Fell and Sell?",
+    answer:
+      "Bank the first full haul before any sale, then set Fair prices with Prestige still at zero. High pricing fails because Prestige has not yet risen, and Low pricing trains customers to expect discounts. Adjust upward only after Prestige supports it.",
+    pageIds: ["fixed-shop-pricing-and-demand-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "internal",
+  },
   // Layout
   {
     id: "layout-first-furniture",
@@ -459,6 +509,16 @@ export const faqItems: FAQItem[] = [
     question: "Can furniture give both a combat buff and a sales appeal bonus?",
     answer:
       "Yes. The first furniture purchase should pair both effects so the player benefits on the dungeon side and the shop side at the same time.",
+    pageIds: ["fixed-shop-layout-and-furniture-buffs-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "internal",
+  },
+  {
+    id: "layout-first-cycle",
+    question: "Which single furniture piece should anchor the first Fell and Sell profitable cycle?",
+    answer:
+      "A single S-tier combat buff piece that survives the rest of the first profitable cycle. Pair the purchase with a same-cycle Quest Board turn-in for survivability gear rather than raw gold so the board pays out gear that reduces the next run's death penalty.",
     pageIds: ["fixed-shop-layout-and-furniture-buffs-en-us"],
     category: "gameplay",
     schemaEligible: true,

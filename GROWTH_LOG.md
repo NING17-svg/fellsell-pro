@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-02 - Altar synergies, first profitable shop cycle, foraging vs dungeon
+
+- Task: Expand three existing pages with new leaf content for altar cross-altar synergies, joined first profitable shop cycle, and Living Forest foraging vs short dungeon descent.
+- Files changed: `src/data/pages/fellsell-fixed-dungeon.ts` (altars-and-builds and living-forest-foraging leaf pages), `src/data/pages/fellsell-fixed-shop.ts` (pricing-and-demand and layout-and-furniture-buffs leaf pages), `src/data/faq.ts` (six new FAQ entries), and this log.
+- URLs affected: `/dungeons/altars-and-builds` (added Shrink + Midas Touch cross-altar synergy, manic cycling, skip-on-drawback rule, archetype trade-off callout), `/dungeons/living-forest-foraging` (added foraging vs short descent comparison, per-event value window, skip-foraging conditions), `/shop/pricing-and-demand` (added first-cycle pricing sequence: bank first then Fair at zero Prestige), `/shop/layout-and-furniture-buffs` (added first-cycle furniture sequence: single S-tier combat buff piece + same-cycle Quest Board turn-in for survivability gear).
+- New FAQ ids: `altars-shrink-midas`, `altars-skip-drawback`, `forest-versus-descent`, `forest-when-skip`, `pricing-first-cycle`, `layout-first-cycle`.
+- Internal links: altars, foraging, and shop pages cross-link to `/dungeons/altars-and-builds`, `/dungeons/living-forest-foraging`, `/shop/pricing-and-demand`, `/shop/layout-and-furniture-buffs`, and `/dungeons/quest-board` for the same-cycle board turn-in.
+- Sources: InsertCoins Fell and Sell review (Shrink + Midas Touch named combo), Worldeka dungeon guide (altar choice as per-run build mechanic, S/A/B-tier furniture ranking), Worldeka beginner guide (bank first haul, first furniture priority, manic cycling), Fell and Sell community wiki (altar effects and cycling, low-risk forest framing), Steam feature list (Shrink, Midas Touch, manic, depressed, foraging, goblin raids, thunderstorms, psychedelic mushroom season, "Reinvest profits", "Furniture layout provides permanent combat buffs and boosts sales appeal").
+
 ### 2026-08-30 - Adsterra six-unit codes integrated
 
 - Task: Populate the fixed Adsterra ad units in `src/data/ads.ts` with the six real codes from the Adsterra publisher dashboard.

@@ -4,6 +4,7 @@ import {
   FALL_SELL_OFFICIAL,
   FALL_SELL_WIKI,
   WORLDEKA_BEGINNER,
+  WORLDEKA_DUNGEON,
   WORLDEKA_STORE,
 } from "./fellsell-fixed-source";
 
@@ -141,13 +142,14 @@ export const fellsellShopPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Fell and Sell player-set pricing responds to supply, demand, prestige, and decoration bonuses. The Fair price mode fits neutral demand, the High price mode fits high Prestige plus high decoration bonus, and the Low price mode fits low Prestige plus slow-moving stock. Adjust rather than set once.",
+      "Fell and Sell player-set pricing responds to supply, demand, prestige, and decoration bonuses. The Fair price mode fits neutral demand, the High price mode fits high Prestige plus high decoration bonus, and the Low price mode fits low Prestige plus slow-moving stock. The first-cycle move is to bank the first full haul before any sale, then price at Fair with Prestige still at zero. Adjust rather than set once.",
     keyFacts: [
       { label: "Pricing input 1", value: "Supply" },
       { label: "Pricing input 2", value: "Demand" },
       { label: "Pricing input 3", value: "Prestige" },
       { label: "Pricing input 4", value: "Decoration bonus" },
       { label: "Price modes", value: "Fair, High, Low" },
+      { label: "First-cycle price", value: "Fair at zero Prestige after banking the haul" },
       { label: "Source tier", value: "Steam feature list + guide attribution" },
     ],
     modules: [
@@ -192,15 +194,23 @@ export const fellsellShopPages: PageContent[] = [
         links: [FALL_SELL_OFFICIAL, WORLDEKA_STORE],
       },
       {
+        id: "first-cycle-pricing",
+        type: "prose",
+        heading: "First-cycle pricing: bank first, then Fair at zero Prestige",
+        body:
+          "The first cycle pricing move is to bank the first full haul before any sale and then set Fair prices at zero Prestige. The Worldeka beginner guide recommends banking the first full haul before any sale because selling a haul before the shop surface has a stable Prestige bracket turns the shop into a discount outlet on day one. With the haul banked and Prestige at zero, the Fair price mode is the only mode that holds the price ceiling; High pricing fails because Prestige has not yet risen, and Low pricing trains customers to expect discounts. The first-cycle pricing sequence is bank first, then Fair at zero Prestige, then adjust upward only after Prestige supports it. See /shop/layout-and-furniture-buffs for the same-cycle furniture purchase and /dungeons/quest-board for the same-cycle Quest Board turn-in that completes the first profitable cycle.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_BEGINNER, WORLDEKA_STORE],
+      },
+      {
         id: "pricing-fact-boundary",
         type: "callout",
         tone: "caution",
         title: "Fact boundary — 2026-08-30",
         body:
-          "The official Steam feature list confirms that player-set pricing responds to supply, demand, prestige, and decoration bonuses. The named Fair, High, and Low price modes and the Prestige ranking detail are attributed to the worldeka store strategy guide, recorded as a guide source. No community-sourced price cheat sheet is stated as official confirmation.",
+          "The official Steam feature list confirms that player-set pricing responds to supply, demand, prestige, and decoration bonuses. The named Fair, High, and Low price modes, the Prestige ranking detail, and the first-cycle bank-first-and-Fair-at-zero-Prestige sequence are attributed to the worldeka store strategy guide and the worldeka beginner guide, recorded as guide sources. No community-sourced price cheat sheet is stated as official confirmation.",
       },
     ],
-    faqIds: ["pricing-mode", "pricing-prestige"],
+    faqIds: ["pricing-mode", "pricing-prestige", "pricing-first-cycle"],
     relatedPageIds: [
       "fixed-shop-hub-en-us",
       "fixed-shop-layout-and-furniture-buffs-en-us",
@@ -238,12 +248,12 @@ export const fellsellShopPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Fell and Sell furniture layout provides permanent combat buffs and boosts sales appeal. The first purchase should be furniture that pairs a combat buff with a sales appeal bonus so the player benefits on the dungeon side and the shop side at the same time. Zone stock to keep walking routes clear and sequence purchases so the first buffs land before the first expansion.",
+      "Fell and Sell furniture layout provides permanent combat buffs and boosts sales appeal. The first purchase should be a single S-tier combat buff piece that survives the rest of the first profitable cycle; pair it with a same-cycle Quest Board turn-in for survivability gear rather than raw gold. Zone stock to keep walking routes clear and sequence purchases so the first buffs land before the first expansion.",
     keyFacts: [
       { label: "Combat buff effect", value: "Permanent, applies on the next run" },
       { label: "Sales appeal effect", value: "Raises the price ceiling" },
       { label: "Display types", value: "Tables, racks and stands, storage chests" },
-      { label: "First purchase", value: "Furniture that pairs combat + appeal" },
+      { label: "First purchase", value: "Single S-tier combat buff piece" },
       { label: "Source tier", value: "Steam feature list + guide attribution" },
     ],
     modules: [
@@ -288,15 +298,23 @@ export const fellsellShopPages: PageContent[] = [
         links: [FALL_SELL_OFFICIAL, WORLDEKA_BEGINNER],
       },
       {
+        id: "first-cycle-furniture",
+        type: "prose",
+        heading: "First-cycle furniture: a single S-tier combat buff piece",
+        body:
+          "The first-cycle furniture move is a single S-tier combat buff piece that survives the rest of the first profitable cycle. The Worldeka dungeon guide ranks furniture for combat buff value and the Worldeka beginner guide binds the first furniture priority to the first profitable cycle. A single S-tier combat buff piece lifts the player's effective tier on the next dungeon run without raising the unbanked-haul risk on that run. Pair the purchase with a same-cycle Quest Board turn-in for survivability gear rather than raw gold: the board pays out gear that reduces the next run's death penalty, while raw gold from the board funds the next shop-day reinvestment instead of the current cycle. See /shop/pricing-and-demand for the same-cycle Fair-at-zero-Prestige pricing and /dungeons/quest-board for the same-cycle board turn-in.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_BEGINNER, WORLDEKA_DUNGEON],
+      },
+      {
         id: "layout-fact-boundary",
         type: "callout",
         tone: "caution",
         title: "Fact boundary — 2026-08-30",
         body:
-          "\"Furniture layout provides permanent combat buffs and boosts sales appeal\" is official Steam text. Specific display types, buff categories, and any tiering of furniture value are attributed to the worldeka beginner guide and the Fell and Sell community wiki, recorded as guide sources.",
+          "\"Furniture layout provides permanent combat buffs and boosts sales appeal\" is official Steam text. Specific display types, buff categories, the S/A/B-tier furniture ranking, and the first-cycle single-S-tier-combat-buff sequence are attributed to the worldeka beginner guide and the worldeka dungeon guide, recorded as guide sources. The same-cycle Quest Board turn-in for survivability gear is attributed to the worldeka beginner guide.",
       },
     ],
-    faqIds: ["layout-first-furniture", "layout-pairs-buffs"],
+    faqIds: ["layout-first-furniture", "layout-pairs-buffs", "layout-first-cycle"],
     relatedPageIds: [
       "fixed-shop-hub-en-us",
       "fixed-shop-pricing-and-demand-en-us",

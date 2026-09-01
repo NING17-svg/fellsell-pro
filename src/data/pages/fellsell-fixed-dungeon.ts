@@ -361,12 +361,13 @@ export const fellsellDungeonPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "Fell and Sell's altars change the state of a run. Shrink and Midas Touch are official Steam feature text; manic and depressed are official Steam combat-state text. The right altar choice depends on the weapon in hand and the run's risk posture. Safer blessings beat drawback-carrying prayers on a short run; carry drawback-carrying prayers only when the run is already stable.",
+      "Fell and Sell's altars change the state of a run. Shrink and Midas Touch are official Steam feature text; manic and depressed are official Steam combat-state text. The right altar choice depends on the weapon in hand and the run's risk posture. The Shrink + Midas Touch combo compounds across a single loot-heavy run; manic cycling fits short aggressive descents; skip drawback-carrying prayers when the run's archetype does not match the downside.",
     keyFacts: [
       { label: "Shrink", value: "Official Steam altar effect" },
       { label: "Midas Touch", value: "Official Steam altar effect" },
       { label: "Manic state", value: "Official Steam combat state" },
       { label: "Depressed state", value: "Official Steam combat state" },
+      { label: "Cross-altar combo", value: "Shrink + Midas Touch for loot-heavy descents" },
       { label: "Best practice", value: "Match altar to weapon in hand" },
       { label: "Source tier", value: "Steam feature list + guide attribution" },
     ],
@@ -420,15 +421,53 @@ export const fellsellDungeonPages: PageContent[] = [
         links: [FALL_SELL_OFFICIAL, WORLDEKA_BEGINNER],
       },
       {
+        id: "synergy-shrink-midas",
+        type: "prose",
+        heading: "Shrink + Midas Touch: the loot-heavy cross-altar synergy",
+        body:
+          "The InsertCoins review calls out Shrink + Midas Touch as a named combination rather than a flat damage bonus: Shrink keeps the player alive through a long loot-heavy descent by shrinking the player's hit volume, while Midas Touch raises the value of the haul once it is banked. The two effects compound across a single run instead of stacking the same effect twice. The combination is the right call when the planned run is loot-heavy and the player can afford to take a deeper floor; the Worldeka dungeon guide frames altar choice as the per-run build mechanic and lists at least three named combos, including this one.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_DUNGEON],
+      },
+      {
+        id: "synergy-manic-cycling",
+        type: "prose",
+        heading: "Manic cycling: short aggressive descents that rotate altar states",
+        body:
+          "Manic cycling uses the manic combat state together with a fast weapon for a short aggressive descent that banks a haul before the stamina cost catches up. The community wiki devotes a section to altar effects and cycling, and the Worldeka beginner guide treats altar choice as the per-run build mechanic. Manic cycling fits a quick bank-and-return run; it does not pair well with a long loot-heavy descent where Shrink + Midas Touch is the better composition. The cycling framing and the per-archetype trade-off are attributed to guide sources.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_BEGINNER, FALL_SELL_WIKI],
+      },
+      {
+        id: "skip-an-altar",
+        type: "prose",
+        heading: "Skip-an-altar rule: when not to take an offered prayer",
+        body:
+          "Not every altar effect is worth taking. The skip-an-altar rule is to pass on a drawback-carrying prayer when the run's unbanked haul is already at risk or the run's archetype does not match the prayer's downside. Pass on depressed during a fast-weapon run; pass on manic during a heavy-weapon run; pass on any drawback-carrying prayer when the next floor is the descent boundary. The skip rule keeps the altar system from destabilising a run that was already working and is the simplest way to keep altar choice aligned with the run archetype.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_BEGINNER],
+      },
+      {
+        id: "archetype-trade-offs",
+        type: "prose",
+        heading: "Same-archetype trade-off callout next to the per-effect descriptions",
+        body:
+          "Each individual altar description above carries a same-archetype trade-off: Shrink pairs with fast-weapon runs but is wasted on heavy-weapon runs that already stagger enemies; Midas Touch pairs with loot-heavy descents but is wasted on short bank-and-return runs where the haul is small; manic fits fast-weapon pressure runs but burns stamina in heavy-weapon runs; depressed fits heavy-weapon steady runs but is wasted in fast-weapon runs. Read the per-effect block and the matching rule together: the effect block names the trade-off, the matching rule binds it to the weapon in hand.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_DUNGEON],
+      },
+      {
         id: "altar-fact-boundary",
         type: "callout",
         tone: "caution",
         title: "Fact boundary — 2026-08-30",
         body:
-          "Shrink, Midas Touch, and the manic and depressed combat states are official Steam feature text. The blessing-versus-prayer framing, the per-effect trade-offs, and the matching rule are attributed to the worldeka beginner guide, recorded as a guide source.",
+          "Shrink, Midas Touch, and the manic and depressed combat states are official Steam feature text. The Shrink + Midas Touch named combination is attributed to the InsertCoins Fell and Sell review and the Worldeka dungeon guide; the cycling framing is attributed to the Worldeka beginner guide and the Fell and Sell community wiki. The skip-on-drawback rule is a guide-source framing and is presented as guidance, not as an official progression table.",
       },
     ],
-    faqIds: ["altars-shrink", "altars-midas", "altars-match-weapon"],
+    faqIds: [
+      "altars-shrink",
+      "altars-midas",
+      "altars-match-weapon",
+      "altars-shrink-midas",
+      "altars-skip-drawback",
+    ],
     relatedPageIds: [
       "fixed-dungeons-hub-en-us",
       "fixed-weapons-en-us",
@@ -748,13 +787,14 @@ export const fellsellDungeonPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "The Living Forest is a foraging surface with three events: goblin raids, thunderstorms, and psychedelic mushroom season. Foraging yields foraged materials that price cleanly on the shop surface. The forest is the better use of a cycle when the dungeon depth decision looks risky and the foraged haul is in demand on the next shop day. The event surface is official Steam feature text; the per-event yield and the timing rule are attributed to guide sources.",
+      "The Living Forest is a foraging surface with three events: goblin raids, thunderstorms, and psychedelic mushroom season. Foraging yields foraged materials that price cleanly on the shop surface. The forest is the better use of a cycle when the dungeon depth decision looks risky and the foraged haul is in demand on the next shop day; the foraging-versus-short-descent comparison and the skip-foraging conditions frame when the forest is not the right call. The event surface is official Steam feature text; the per-event yield and the timing rule are attributed to guide sources.",
     keyFacts: [
       { label: "Event 1", value: "Goblin raids" },
       { label: "Event 2", value: "Thunderstorms" },
       { label: "Event 3", value: "Psychedelic mushroom season" },
       { label: "Yield", value: "Foraged materials that price on the shop surface" },
       { label: "Best use of a cycle", value: "When the dungeon depth decision looks risky" },
+      { label: "Skip-foraging condition", value: "Quest Board dungeon feat pending" },
       { label: "Source tier", value: "Steam feature list + guide attribution" },
     ],
     modules: [
@@ -799,15 +839,39 @@ export const fellsellDungeonPages: PageContent[] = [
         links: [FALL_SELL_OFFICIAL, FALL_SELL_WIKI],
       },
       {
+        id: "forest-versus-short-descent",
+        type: "prose",
+        heading: "Foraging vs a short dungeon descent: which cycle is more efficient",
+        body:
+          "A Living Forest foraging trip and a short dungeon descent are not equivalent cycles. The community wiki frames the forest as a low-risk alternative to the dungeon; the Worldeka top-tips guide devotes coverage to foraging windows and the mushroom season mechanic. A short dungeon descent yields a wider mix of materials plus a chance at gear or an altar pull, but the death penalty is larger. A forest trip yields a narrower mix of foraged materials at a lower risk. The efficiency comparison depends on the value window of the active event: a thunderstorm with the mushroom season active pushes the forest yield above a short descent of similar length; a calm day with no mushroom season drops the forest yield below a short descent of similar length. See the seasonal pricing callout on /shop/pricing-and-demand for the matching shop-day read.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_DUNGEON, FALL_SELL_WIKI],
+      },
+      {
+        id: "value-window-each-event",
+        type: "prose",
+        heading: "Value window of each foraging event",
+        body:
+          "Each foraging event carries its own value window. A goblin raid event shifts the run from passive foraging to active combat and the haul leans combat loot rather than raw foraging, so the value window opens only when the player is equipped for it. A thunderstorm changes the foraging pace and visibility, and it pairs with the psychedelic mushroom season to push the yield above a short dungeon descent. A psychedelic mushroom season outside of a thunderstorm drops the yield below a short descent of similar length. Treat the goblin raid as a combat-skewed window, the thunderstorm-and-mushroom combination as the high-yield window, and the calm mushroom season as a low-yield window.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_DUNGEON, FALL_SELL_WIKI],
+      },
+      {
+        id: "skip-foraging-conditions",
+        type: "prose",
+        heading: "Skip-foraging conditions: when the forest is not the right call",
+        body:
+          "Skip the forest entirely when a dungeon-featuring Quest Board feat is pending and the run can stack onto that feat: the board objective plus the banked haul pays twice on the same cycle, while a foraging trip pays once. Skip the forest on a calm day with no thunderstorm and no mushroom season active: the value window is closed. Skip the forest when shop stock is already over-supplied with foraged materials and the next shop day cannot clear a fresh haul. Skip the forest when the player's health or potions are below the risk-threshold check from /dungeons/extraction-and-death-penalty: a dungeon run with low health and low potions is worse than a foraging trip, but a foraging trip that turns into combat is also worse than a bank-and-return dungeon run. The skip conditions stack with the dungeon-side risk check.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_DUNGEON, FALL_SELL_WIKI],
+      },
+      {
         id: "forest-fact-boundary",
         type: "callout",
         tone: "caution",
         title: "Fact boundary — 2026-08-30",
         body:
-          "Foraging, goblin raids, thunderstorms, and psychedelic mushroom season are official Steam feature text. The per-event pacing and the forest-versus-dungeon rule are attributed to the Fell and Sell community wiki, recorded as a guide source. No material from the RuneScape \"Goblin Raids\" event or the Idlescape \"Living Forest\" zone is used; the term is always qualified with the game name.",
+          "Foraging, goblin raids, thunderstorms, and psychedelic mushroom season are official Steam feature text. The per-event pacing, the forest-versus-dungeon rule, the foraging-versus-short-descent comparison, and the skip-foraging conditions are attributed to the Worldeka dungeon guide and the Fell and Sell community wiki, recorded as guide sources. No material from the RuneScape \"Goblin Raids\" event or the Idlescape \"Living Forest\" zone is used; the term is always qualified with the game name.",
       },
     ],
-    faqIds: ["forest-events", "forest-versus-dungeon"],
+    faqIds: ["forest-events", "forest-versus-dungeon", "forest-versus-descent", "forest-when-skip"],
     relatedPageIds: [
       "fixed-dungeons-hub-en-us",
       "fixed-crafting-and-gear-en-us",

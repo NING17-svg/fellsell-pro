@@ -545,4 +545,45 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "internal",
   },
+  // Achievements ledger
+  {
+    id: "achievements-how-many",
+    question: "How many Fell and Sell achievements are there?",
+    answer:
+      "Fell and Sell ships with 97 Steam achievements organized as 13 interconnected ledgers: kill count, four-family weapon mastery, chest opens, dungeon floors, boss kills, total crafts, crafted rarity ladder, total sales, trading gold, six category-sales targets, the parallel Comfort and Prestige chains, and the required single death.",
+    pageIds: ["fixed-achievements-ledger-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "achievements-weapon-mastery",
+    question: "How are Fell and Sell weapon mastery achievements organized?",
+    answer:
+      "Across four weapon families — Sword, Axe, Hammer, Staff — with a Novice, Adept, Journeyman, and Master tier in each. The per-family target is 250 kills, totaling 1,000 weapon-specific kills. Rotate families across sessions rather than finish one family before picking up the next.",
+    pageIds: ["fixed-achievements-ledger-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "internal",
+  },
+  {
+    id: "achievements-trap-names",
+    question: "Which Fell and Sell achievement names hide a trap?",
+    answer:
+      "'Getting better!' covers both Craft 5 Items and Sell 25 Items, and 'Master Dungeoneering' covers both Floor 8 and Floor 10. The same display name resolves to two different ledgers; finishing the lower threshold does not auto-complete the higher one.",
+    pageIds: ["fixed-achievements-ledger-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "internal",
+  },
+  {
+    id: "achievements-comfort-versus-prestige",
+    question: "Is Comfort the same chain as Prestige in Fell and Sell?",
+    answer:
+      "No. Comfort and Prestige are parallel Level 1 to Level 10 chains. Comfort climbs through decoration-driven progression (furniture tiers: S combat buffs, A Prestige-Building, B Situational Investments), while Prestige climbs through commercial-strength progression. Advance both chains together rather than max Prestige before touching Comfort.",
+    pageIds: ["fixed-achievements-ledger-en-us", "fixed-shop-pricing-and-demand-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "internal",
+  },
 ];

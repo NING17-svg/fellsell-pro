@@ -51,4 +51,11 @@ export const WORLDEKA_DUNGEON: LinkSpec = {
     "Guide source for attributed dungeon tactics and furniture buff detail.",
 };
 
+export const NINEPUZ_ACHIEVEMENTS: LinkSpec = {
+  label: "9puz Fell and Sell achievement guide",
+  href: "https://9puz.com/5282-fell-sell-achievement-guide/",
+  description:
+    "Guide source for the 13-ledger structure, mastery tier names, category-sales targets, crafted-rarity ladder, and duplicate-name trap achievements, re-verified 2026-09-14.",
+};
+
 export const OFFICIAL_LINKS: LinkSpec[] = [FALL_SELL_OFFICIAL, FALL_SELL_STEAMBASE];

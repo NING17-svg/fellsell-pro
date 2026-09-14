@@ -6,6 +6,16 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-14 - Achievements ledger session plan
+
+- Task: Add a single leaf page that maps Fell and Sell's 97 Steam achievements as 13 interconnected ledgers and serves as a session-planning reference; cross-link from the dungeon weapons page (mastery grid) and the shop pricing page (Comfort vs Prestige).
+- Files changed: new `src/data/pages/fellsell-fixed-achievements.ts`, `src/data/pages/fellsell-fixed-source.ts` (added 9puz achievement guide link), `src/data/pages/fellsell-fixed-dungeon.ts` (added achievements entry to dungeons hub grid, added cross-link to weapons hero CTA, weapons relatedPageIds, and weapons fact-boundary callout), `src/data/pages/fellsell-fixed-shop.ts` (added dual Comfort-versus-Prestige clarification module, achievements CTA on pricing hero, relatedPageIds on pricing, layout, and hub), `src/data/faq.ts` (four new FAQ ids), `src/lib/content.ts` (registered new page), `CONTENT_INDEX.md`, and this log.
+- URLs affected: `/achievements` (new leaf), `/dungeons/weapons` (added Achievements Ledger CTA, mastery grid cross-reference in quick answer and fact-boundary callout), `/dungeons` (added Achievements Ledger leaf card and relatedPageIds), `/shop/pricing-and-demand` (added Achievements Ledger CTA, dual Comfort vs Prestige module, relatedPageIds), `/shop/layout-and-furniture-buffs` (added relatedPageIds), `/shop` (added relatedPageIds).
+- New FAQ ids: `achievements-how-many`, `achievements-weapon-mastery`, `achievements-trap-names`, `achievements-comfort-versus-prestige`.
+- Source links added: 9puz Fell and Sell achievement guide (re-verified 2026-09-14), Fell and Sell community wiki (S/A/B furniture tier framing).
+- Source content: 13-ledger map (All enemy kills 1,000, four-family weapon mastery at 250 per family across Sword/Axe/Hammer/Staff at Novice/Adept/Journeyman/Master, Chest opens 75, Dungeon floors Floor 10, Boss kills 3, Total items crafted 60, crafted-rarity ladder Uncommon/Rare/Epic/Legendary each once, Total items sold 1,000, Trading gold 2,500, Category sales Magic 50/Weapons 80/Alcohol 50/Bones 50/Armor 80/Bloodstone 10, Comfort Level 10, Prestige Level 10, required single death). Dual-chain clarification: Comfort is decoration-driven and parallel to Prestige, not a single combined chain. Duplicate-name traps: 'Getting better!' (Craft 5 Items vs Sell 25 Items) and 'Master Dungeoneering' (Floor 8 vs Floor 10). No named boss thresholds beyond Floor 10 are stated.
+- Verification: `npm run verify` plus the shared serializer before registry terminal commit.
+
 ### 2026-09-02 - Altar synergies, first profitable shop cycle, foraging vs dungeon
 
 - Task: Expand three existing pages with new leaf content for altar cross-altar synergies, joined first profitable shop cycle, and Living Forest foraging vs short dungeon descent.

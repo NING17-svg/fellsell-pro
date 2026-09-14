@@ -108,6 +108,7 @@ export const fellsellShopPages: PageContent[] = [
       "fixed-shop-pricing-and-demand-en-us",
       "fixed-shop-layout-and-furniture-buffs-en-us",
       "fixed-shop-upgrades-and-progression-en-us",
+      "fixed-achievements-ledger-en-us",
       "fixed-dungeons-hub-en-us",
       "home",
     ],
@@ -124,21 +125,21 @@ export const fellsellShopPages: PageContent[] = [
     url: "/shop/pricing-and-demand",
     pageType: "guides",
     presentation: { shell: "content", variant: "reading-right-rail" },
-    h1: "Fell and Sell shop pricing and demand: Fair, High, Low, and Prestige",
+    h1: "Fell and Sell shop pricing and demand: Fair, High, Low, Prestige, and Comfort",
     seoTitle:
-      "Fell and Sell Shop Pricing and Demand: Fair, High, Low, and Prestige",
+      "Fell and Sell Shop Pricing and Demand: Fair, High, Low, Prestige, Comfort",
     metaDescription:
-      "Decide what price to set for stock using Fell and Sell supply, demand, Prestige, and decoration bonuses. The Steam store page confirms player-set pricing responds to supply, demand, prestige, and decoration bonuses.",
+      "Decide what price to set for stock using Fell and Sell supply, demand, Prestige, and decoration bonuses. The Steam store page confirms player-set pricing responds to supply, demand, prestige, and decoration bonuses. Comfort and Prestige are separate Level 1-10 chains, not one combined chain.",
     summary:
-      "Fell and Sell player-set pricing responds to supply, demand, prestige, and decoration bonuses. This guide covers the Fair, High, and Low price modes, what Prestige is and how it changes customer behaviour, and how decoration bonuses feed the price ceiling.",
+      "Fell and Sell player-set pricing responds to supply, demand, prestige, and decoration bonuses. This guide covers the Fair, High, and Low price modes, what Prestige is and how it changes customer behaviour, how decoration bonuses feed the price ceiling, and the parallel Comfort chain that climbs Level 1 to Level 10 alongside Prestige.",
     hero: {
       eyebrow: "Shop pricing and demand",
       subtitle:
-        "Player-set pricing responds to supply, demand, prestige, and decoration bonuses. Pick a price mode based on the day's demand curve, raise prices when Prestige supports it, and adjust rather than set once.",
+        "Player-set pricing responds to supply, demand, prestige, and decoration bonuses. Pick a price mode based on the day's demand curve, raise prices when Prestige supports it, and treat Comfort and Prestige as two parallel Level 1 to Level 10 chains rather than a single combined chain.",
       ctas: [
         { label: "Shop Hub", href: "/shop" },
         { label: "Layout and Furniture Buffs", href: "/shop/layout-and-furniture-buffs" },
-        { label: "Crafting and Gear", href: "/dungeons/crafting-and-gear" },
+        { label: "Achievements Ledger", href: "/achievements" },
       ],
     },
     quickAnswer:
@@ -178,6 +179,14 @@ export const fellsellShopPages: PageContent[] = [
         links: [FALL_SELL_OFFICIAL, WORLDEKA_STORE],
       },
       {
+        id: "comfort-versus-prestige",
+        type: "prose",
+        heading: "Comfort and Prestige: two parallel chains, not one combined chain",
+        body:
+          "Comfort and Prestige are separate Level 1 to Level 10 chains, not a single combined chain. Comfort climbs through decoration-driven shop progression (furniture tiers rated S combat buffs, A Prestige-Building, and B Situational Investments by the community wiki); Prestige climbs through commercial-strength progression (consistent sales, fast-moving stock, and a price ceiling that supports the High mode). The session-planning rule is to advance both chains in parallel: every furniture purchase that lands on an S combat-buff piece advances Comfort through the decoration side, while the same cycle's shop sales advance Prestige through the commercial side. See /achievements for the dual-chain ledger entries.",
+        links: [FALL_SELL_OFFICIAL, WORLDEKA_STORE, FALL_SELL_WIKI],
+      },
+      {
         id: "decoration",
         type: "prose",
         heading: "How decoration bonuses feed the price ceiling",
@@ -215,6 +224,7 @@ export const fellsellShopPages: PageContent[] = [
       "fixed-shop-hub-en-us",
       "fixed-shop-layout-and-furniture-buffs-en-us",
       "fixed-crafting-and-gear-en-us",
+      "fixed-achievements-ledger-en-us",
       "home",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
@@ -319,6 +329,7 @@ export const fellsellShopPages: PageContent[] = [
       "fixed-shop-hub-en-us",
       "fixed-shop-pricing-and-demand-en-us",
       "fixed-shop-upgrades-and-progression-en-us",
+      "fixed-achievements-ledger-en-us",
       "home",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],

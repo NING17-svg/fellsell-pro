@@ -2,6 +2,7 @@ import type { FAQItem, PageContent, RouteKind } from "@/types/content";
 import { entityFamilies } from "@/data/entities";
 import { faqItems } from "@/data/faq";
 import { fellsellDungeonPages } from "@/data/pages/fellsell-fixed-dungeon";
+import { fellsellAchievementsPages } from "@/data/pages/fellsell-fixed-achievements";
 import { fellsellFixedPages } from "@/data/pages/fellsell-fixed";
 import { fellsellFixturePages } from "@/data/pages/fellsell-fixtures";
 import { fellsellShopPages } from "@/data/pages/fellsell-fixed-shop";
@@ -15,6 +16,7 @@ const fixedPages: PageContent[] = [
   ...fellsellFixedPages,
   ...fellsellDungeonPages,
   ...fellsellShopPages,
+  ...fellsellAchievementsPages,
   ...fellsellFixturePages,
   ...sitePages,
 ];

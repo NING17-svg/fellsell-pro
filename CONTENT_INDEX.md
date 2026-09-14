@@ -17,6 +17,7 @@ hreflang, sitemap, and route-manifest validation.
 | `/guides` | `src/data/pages/guide-pages.ts` | Guide | Template Game guides | Find guide topics before launch | Wiki / Release Info | Hub | Do not invent walkthroughs before reliable details exist. |
 | `/release-date` | `src/data/pages/release-pages.ts` | Guide | Template Game release date | Check release timing and platforms | FAQ / Wiki | Supporting hub | Must stay tied to official or store sources. |
 | `/faq` | `src/data/pages/site-pages.ts` | Guide | Template Game FAQ | Get short answers | Release Info / Contact | Answer hub | FAQ schema enabled. |
+| `/achievements` | `src/data/pages/fellsell-fixed-achievements.ts` | Wiki | Fell and Sell achievements ledger | Plan a session across the 13 ledgers and 97 Steam achievements | Dungeons Hub / Shop Pricing | Supporting hub | 9puz achievement guide + wiki, re-verified 2026-09-14. |
 | `/about` | `src/data/pages/site-pages.ts` | Utility | about Template Game Guide | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |
 | `/contact` | `src/data/pages/site-pages.ts` | Utility | contact Template Game Guide | Corrections and source updates | About | Trust | Contact channel pending. |
 | `/privacy-policy` | `src/data/pages/site-pages.ts` | Legal | privacy policy | Privacy and analytics | Terms | Trust | GA4 only when configured. |
@@ -33,6 +34,7 @@ hreflang, sitemap, and route-manifest validation.
 
 - Launch facts: `/release-date`, `/faq`
 - Official facts and safe guide structure: `/wiki`, `/guides`
+- Achievements session-planning: `/achievements`
 - Evergreen hub and trust: `/`, `/about`, `/contact`, `/privacy-policy`, `/terms`
 
 ## Internal Linking Map
@@ -42,6 +44,8 @@ hreflang, sitemap, and route-manifest validation.
 - Guides should link to wiki and release pages.
 - Release Date should link to FAQ and official sources.
 - FAQ should include all current high-demand answer pages.
+- Achievements ledger `/achievements` cross-links from `/dungeons/weapons` (weapon mastery grid) and `/shop/pricing-and-demand` (Comfort versus Prestige dual chain).
+- Dungeons hub and shop hub both surface the achievements ledger as a supporting hub.
 
 ## Open Questions
 

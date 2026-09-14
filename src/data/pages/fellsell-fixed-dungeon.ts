@@ -107,6 +107,12 @@ export const fellsellDungeonPages: PageContent[] = [
               "What foraging yields compared with a dungeon run, goblin raids, thunderstorms, psychedelic mushroom season, when the forest is the better use of a cycle.",
             href: "/dungeons/living-forest-foraging",
           },
+          {
+            title: "Achievements Ledger",
+            summary:
+              "The 13-ledger map of the 97 Steam achievements: weapon mastery grid, six category-sales targets, four crafted-rarity tiers, parallel Comfort and Prestige chains, duplicate-name traps.",
+            href: "/achievements",
+          },
         ],
       },
       {
@@ -135,6 +141,7 @@ export const fellsellDungeonPages: PageContent[] = [
       "fixed-crafting-and-gear-en-us",
       "fixed-quest-board-en-us",
       "fixed-living-forest-foraging-en-us",
+      "fixed-achievements-ledger-en-us",
       "fixed-shop-hub-en-us",
       "home",
     ],
@@ -502,10 +509,11 @@ export const fellsellDungeonPages: PageContent[] = [
         { label: "Dungeons Hub", href: "/dungeons" },
         { label: "Crafting and Gear", href: "/dungeons/crafting-and-gear" },
         { label: "Altars and Builds", href: "/dungeons/altars-and-builds" },
+        { label: "Achievements Ledger", href: "/achievements" },
       ],
     },
     quickAnswer:
-      "Fell and Sell weapon families split into fast and heavy weapons with a shield blocking option. Fast weapons trade raw damage for swing speed and stamina efficiency; heavy weapons trade swing speed for raw damage and stagger. Crafted gear changes the choice because crafted weapons can lift the player's effective tier without raising the unbanked-haul risk on the next run. The Bloodstone Greatsword, Heavy Iron Sword, and Goblin Halberd autocomplete suggestions resolve to Elder Scrolls Online items and are kept only inside the disambiguation block.",
+      "Fell and Sell weapon families split into fast and heavy weapons with a shield blocking option. Fast weapons trade raw damage for swing speed and stamina efficiency; heavy weapons trade swing speed for raw damage and stagger. Crafted gear changes the choice because crafted weapons can lift the player's effective tier without raising the unbanked-haul risk on the next run. The four mastery families (Sword, Axe, Hammer, Staff) and the per-family 250-kill mastery grid live on /achievements. The Bloodstone Greatsword, Heavy Iron Sword, and Goblin Halberd autocomplete suggestions resolve to Elder Scrolls Online items and are kept only inside the disambiguation block.",
     keyFacts: [
       { label: "Fast weapons", value: "Swing speed + stamina efficiency" },
       { label: "Heavy weapons", value: "Raw damage + stagger" },
@@ -554,7 +562,7 @@ export const fellsellDungeonPages: PageContent[] = [
         tone: "caution",
         title: "Fact boundary — 2026-08-30",
         body:
-          "Only weapons documented for Fell and Sell are listed on this page. The fast-versus-heavy framing and the recovery time framing are attributed to the Fell and Sell community wiki and the worldeka beginner guide, recorded as guide sources. The crafting reference (\"Forge stronger weapons and tougher armor\") is official Steam feature text.",
+          "Only weapons documented for Fell and Sell are listed on this page. The fast-versus-heavy framing and the recovery time framing are attributed to the Fell and Sell community wiki and the worldeka beginner guide, recorded as guide sources. The crafting reference (\"Forge stronger weapons and tougher armor\") is official Steam feature text. The four mastery families (Sword, Axe, Hammer, Staff), the per-family 250-kill target, and the Novice/Adept/Journeyman/Master tier chain are documented on /achievements, attributed to the 9puz achievement guide.",
       },
     ],
     faqIds: ["weapons-fast-heavy", "weapons-disambiguation"],
@@ -562,6 +570,7 @@ export const fellsellDungeonPages: PageContent[] = [
       "fixed-dungeons-hub-en-us",
       "fixed-crafting-and-gear-en-us",
       "fixed-altars-and-builds-en-us",
+      "fixed-achievements-ledger-en-us",
       "home",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],

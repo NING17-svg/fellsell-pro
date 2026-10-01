@@ -692,7 +692,7 @@ export const fellsellDungeonPages: PageContent[] = [
     hero: {
       eyebrow: "Quest Board",
       subtitle:
-        "The Quest Board converts run objectives into gold and gear. Stack a board objective onto a run already planned so the dungeon descent and the board payout happen on the same cycle.",
+        "Where the Quest Board sits relative to the dungeon entrance, what a run objective pays out, and how to stack a board turn onto a descent you were already planning.",
       ctas: [
         { label: "Dungeons Hub", href: "/dungeons" },
         { label: "Dungeon Guide", href: "/dungeons/guide" },

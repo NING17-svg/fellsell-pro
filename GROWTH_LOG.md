@@ -6,6 +6,16 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-01 - Fold states each fact once and modules render as structure
+
+- Task: Stop the hero subtitle and the Quick Answer from saying the same thing on the same screen, remove a repository-internal path published as a source, and render authored Markdown in module bodies.
+- Files changed: `src/components/content/markdown.tsx` (new), `ModuleRenderer.tsx`, `StatusCallout.tsx`, `PageHero.tsx`, `ContentPage.tsx`, `HomePage.tsx`, `HubPage.tsx`, `WorkspacePage.tsx`, `src/styles/modules.css`, `src/data/pages/home.ts`, `fellsell-fixed.ts`, `fellsell-fixed-dungeon.ts`, `fellsell-fixed-shop.ts`, and this log.
+- Fold changed: On `/`, `/dungeons/quest-board`, `/shop/layout-and-furniture-buffs`, `/shop/upgrades-and-progression`, `/demo`, `/multiplayer-and-co-op`, and `/mods` the subtitle already answered the page's question and the Quick Answer repeated it. The subtitle is now a positioning line naming what the page covers; the Quick Answer keeps the facts. No fact was moved, added, or removed.
+- Removed: The homepage Sources list cited `game-intelligence/handoffs/game-check/build-now/fell-sell.md`, a path inside the build pipeline, as though it were a public source. Everything that bullet claimed is already attributed to the Steam store page entry above it, so the bullet is gone rather than repointed at a guess.
+- Rendering changed: A prose module body is split into headings, paragraphs, lists and tables instead of being printed as one `<p>`. The homepage Sources list and the seven internal links on the home page were previously printed as literal `[label](url)` text; they now render as links and the list as a list.
+- URLs affected: No URL, route, page type, keyword, CTA, title, H1, canonical, schema, or internal-link role changed, so `CONTENT_INDEX.md` needs no update.
+- Verification: `npm run verify` (typecheck, lint, template, content, IndexNow, static build, rendered SEO for 28 pages / 28 sitemap URLs / 28 manifest routes) plus a sweep of the 29 built HTML files for raw heading markers, unrendered links, and internal-path leaks.
+
 ### 2026-09-14 - Achievements ledger session plan
 
 - Task: Add a single leaf page that maps Fell and Sell's 97 Steam achievements as 13 interconnected ledgers and serves as a session-planning reference; cross-link from the dungeon weapons page (mastery grid) and the shop pricing page (Comfort vs Prestige).

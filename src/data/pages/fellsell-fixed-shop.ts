@@ -250,7 +250,7 @@ export const fellsellShopPages: PageContent[] = [
     hero: {
       eyebrow: "Shop layout and furniture buffs",
       subtitle:
-        "Furniture layout provides permanent combat buffs and boosts sales appeal. Pick furniture that pairs a combat buff with a sales appeal bonus, zone stock to keep walking routes clear, and sequence purchases so the first buffs land before the first expansion.",
+        "What each piece of furniture actually does, how to zone the floor so customers can reach the stock, and the order to buy in once the shop is turning a profit.",
       ctas: [
         { label: "Shop Hub", href: "/shop" },
         { label: "Shop Pricing", href: "/shop/pricing-and-demand" },
@@ -355,7 +355,7 @@ export const fellsellShopPages: PageContent[] = [
     hero: {
       eyebrow: "Shop upgrades and progression",
       subtitle:
-        "Reinvest profits from the first profitable cycles into furniture that pairs combat buffs with sales appeal, then layer on commercial appeal and capacity, then expand the shop floor. Watch for the signs an upgrade is premature so the reinvestment order does not outpace the dungeon side.",
+        "Where the first profits should go, how combat buffs and commercial appeal stack over successive cycles, and the signs that an upgrade is worth buying too early.",
       ctas: [
         { label: "Shop Hub", href: "/shop" },
         { label: "Layout and Furniture Buffs", href: "/shop/layout-and-furniture-buffs" },

@@ -89,7 +89,7 @@ export const fellsellFixedPages: PageContent[] = [
         type: "prose",
         heading: "Where to buy Fell and Sell and how to verify the listing",
         body:
-          "The only published purchase channel for Fell and Sell is the Steam store page at https://store.steampowered.com/app/4627110/Fell__Sell. There is no standalone website, no third-party retail key reseller listing, and no other storefront sale published by the developer or publisher as of August 30, 2026. Any third-party key site offering the title outside Steam should be checked against the official store page before purchase.\n\nTo verify the current price and the active discount window directly, open the Steam store page on the day of purchase. Steam shows the discount timer and the standard price in the same panel, so the September 9, 2026 end date and the USD 8.99 discounted price can be confirmed without relying on a screenshot or cached article.",
+          "The only published purchase channel for Fell and Sell is the Steam store page at [the Steam store page](https://store.steampowered.com/app/4627110/Fell__Sell). There is no standalone website, no third-party retail key reseller listing, and no other storefront sale published by the developer or publisher as of August 30, 2026. Any third-party key site offering the title outside Steam should be checked against the official store page before purchase.\n\nTo verify the current price and the active discount window directly, open the Steam store page on the day of purchase. Steam shows the discount timer and the standard price in the same panel, so the September 9, 2026 end date and the USD 8.99 discounted price can be confirmed without relying on a screenshot or cached article.",
         links: [FALL_SELL_OFFICIAL],
       },
       {
@@ -242,7 +242,7 @@ export const fellsellFixedPages: PageContent[] = [
     hero: {
       eyebrow: "Free demo",
       subtitle:
-        "A free Fell and Sell demo is listed on the Steam store page as of August 30, 2026. Open the store page, switch to the demo access point, and download through Steam. No official statement about demo save transfer into the full release has been published.",
+        "How to reach the free demo from the Steam listing, how far into the game it goes, and what is known about carrying a demo save into the full game.",
       ctas: [
         { label: "Release and Price", href: "/release-date-platforms-price" },
         { label: "Beginner Guide", href: "/beginner-guide" },
@@ -515,7 +515,7 @@ export const fellsellFixedPages: PageContent[] = [
     hero: {
       eyebrow: "Multiplayer and co-op",
       subtitle:
-        "Fell and Sell is single-player only as of August 30, 2026. The Steam store page lists single-player alongside Steam Cloud, Family Sharing, and 97 achievements. Co-op or multiplayer mode is not announced.",
+        "What the Steam listing actually supports today, and what it says about playing alongside other people.",
       ctas: [
         { label: "Release and Price", href: "/release-date-platforms-price" },
         { label: "Gameplay Loop", href: "/gameplay-loop" },
@@ -602,7 +602,7 @@ export const fellsellFixedPages: PageContent[] = [
     hero: {
       eyebrow: "Mods and Workshop",
       subtitle:
-        "No Steam Workshop or official mod support is listed on the Fell and Sell Steam store page as of August 30, 2026. The Steam features confirmed are single-player, Steam Cloud, Family Sharing, and 97 achievements.",
+        "What the store page does and does not list about modding, and what is worth watching for from the developer after launch.",
       ctas: [
         { label: "Release and Price", href: "/release-date-platforms-price" },
         { label: "System Requirements", href: "/system-requirements" },

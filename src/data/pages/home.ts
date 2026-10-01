@@ -19,7 +19,7 @@ export const homePage: PageContent = {
   hero: {
     eyebrow: "Fell and Sell reference",
     subtitle:
-      "Fell and Sell is a first-person dungeon roguelite and shopkeeper game from Art Games Studio S.A. and PlayWay S.A., released on Steam for Windows on August 26, 2026 at USD 9.99. The four starting routes send you into beginner guidance, the dungeons hub, the shop hub, and the release status page.",
+      "Fell and Sell runs on one economy with two halves: a first-person dungeon roguelite on one side, a merchant shop on the other. This hub covers the launch, the loop that connects them, and the systems on each side.",
     ctas: [
       { label: "Beginner Guide", href: "/beginner-guide" },
       { label: "Gameplay Loop", href: "/gameplay-loop" },
@@ -79,7 +79,7 @@ export const homePage: PageContent = {
       type: "prose",
       heading: "Sources",
       body:
-        "- [Fell and Sell on Steam (AppID 4627110)](https://store.steampowered.com/app/4627110/Fell__Sell) - `official/store` - checked `2026-08-30` - release date 2026-08-26, USD 9.99 price, introductory 10% discount to USD 8.99 ending 2026-09-09, Windows system requirements, single-player designation, 97 achievements, 11 interface languages, free demo, eight named feature systems.\n- [Steambase Fell and Sell info page](https://steambase.io/games/fell-sell/info) - `wiki/reference` - checked `2026-08-30` - cross-check on developer and publisher credits, the additional Mac and Linux platform listing recorded as unverified, and full controller support with DualShock and DualSense.\n- [Fell and Sell community wiki](https://www.fellsell.wiki/) - `wiki/reference` - checked `2026-08-30` - description of the dungeon, crafting, shop, and reinvestment loop used to frame the gameplay section.\n- [Game-check brief for Fell and Sell](game-intelligence/handoffs/game-check/build-now/fell-sell.md) - `reference` - checked `2026-08-30` - confirmation that Fell and Sell is a Steam AppID 4627110 build-now decision with a Demo plus 11-language release and the dungeon, shop, altar, and foraging feature systems.",
+        "- [Fell and Sell on Steam (AppID 4627110)](https://store.steampowered.com/app/4627110/Fell__Sell) - `official/store` - checked `2026-08-30` - release date 2026-08-26, USD 9.99 price, introductory 10% discount to USD 8.99 ending 2026-09-09, Windows system requirements, single-player designation, 97 achievements, 11 interface languages, free demo, eight named feature systems.\n- [Steambase Fell and Sell info page](https://steambase.io/games/fell-sell/info) - `wiki/reference` - checked `2026-08-30` - cross-check on developer and publisher credits, the additional Mac and Linux platform listing recorded as unverified, and full controller support with DualShock and DualSense.\n- [Fell and Sell community wiki](https://www.fellsell.wiki/) - `wiki/reference` - checked `2026-08-30` - description of the dungeon, crafting, shop, and reinvestment loop used to frame the gameplay section.\n",
     },
   ],
   faqIds: [

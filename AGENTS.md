@@ -67,8 +67,8 @@ A growth-relevant task is not complete until `GROWTH_LOG.md` is updated.
 - `GROWTH_LOG.md`: chronological growth-relevant change log.
 
 
-## Shared guide Worker deployment
+## Production deployment
 
-User-authorized on 2026-10-01: this site's production domain fellsell.pro is served by Worker `1webswingescape-wiki` in `guide-pool-03`, at most 10 guide sites per Worker. `.shared-worker.json` is the authoritative deployment mapping; the deployment repository is `NING17-svg/game-guide-pool-03`. This deployment exception overrides older instructions that infer an independent Worker from this source repository or require assets-only for the shared deployment entry. Retain this source site's own build configuration and functionality.
+As of 2026-10-01, `fellsell.pro` remains served by its existing independent Worker `fellsell-pro`. The user scoped the Worker merge maintenance to one group at a time; this site has not been migrated. The previously prewritten group-03 mapping and deploy hook were premature and have been removed from this source repository.
 
-Keep content, canonical URLs, sitemap, analytics and ad identity in this source repository. A main-branch push runs `.github/workflows/shared-worker.yml` and calls the configured secret Cloudflare deploy hook; Cloudflare builds and publishes the group's source HEADs. Do not run this source repository's wrangler deploy or recreate its previous independent Worker. After push, run the central `cloudflare_push_verify.py --repo-root <this source checkout>`; it resolves this mapping and requires source SHA, successful group build, 100% active version and live domain marker to agree. Source SHA and deployment repository SHA are different identities.
+A main-branch push uses the restored Cloudflare Git build connection: `npm run build` then noninteractive `npx wrangler deploy`, with the configured build token. Keep `wrangler.jsonc`'s assets-only static export. Verify the exact source commit's successful build, 100% active Worker version and public page/assets before reporting publication. Future shared-Worker migration requires its own authorized group and completed live routing verification.

@@ -15,7 +15,7 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Local verification: typecheck/lint, template/asset/ad/search gate, content/FAQ references, IndexNow tests, static export and rendered SEO all passed. Migration regression compared non-home answers to source base 1e3865deb711be720036738a141a1e32a0e7d83c; every module renders once; answers/context/FAQ and directory remain discoverable. Old Markdown heading+following paragraph loss reproduced, shared RichText retains it.
 - Browser: 1440px home/pricing, 390px home/pricing/achievements. Fonts/images loaded. Search lazy-loads and clicks pricing route. 480px achievement table scrolls within a 333px wrapper; no document overflow. Responsive menu and chapters collapse on mobile. Preview ad/analytics requests blocked for repeatable visual inspection; this does not prove ad delivery/revenue.
 - Mobile interactive acceptance: grouped menu opens, answer context opens, chapter link scrolls to its real target (~34px from top). Header entries are fully visible; home typography reduced on mobile to show more of the game scene.
-- Publication status: source push and official shared Worker verifier pending. This entry is a progress record, not a deployment claim.
+- Publication status: source pushed; public production verification pending against the original independent Worker. This entry is a progress record, not a deployment claim.
 
 
 ### 2026-10-01 - Fold states each fact once and modules render as structure
@@ -82,6 +82,8 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Ad baseline: Fixed Adsterra-ready modules are present and disabled; no ad markup or request is emitted.
 - Follow-up: Replace this entry with a real launch/configuration entry when the one-click builder fills the site for a specific game.
 
-## 2026-10-01 — shared Worker deployment maintenance
+## 2026-10-01 — Correct premature group-03 publishing mapping
 
-User-authorized routing migration to `guide-pool-03` / Worker `1webswingescape-wiki`; source push is connected to the shared Cloudflare Git build via the repository deploy hook. Content and public URL identities are unchanged. Completion is tracked by the central group migration report and live source/version verification.
+Official API readback showed `fellsell.pro` still binds Worker `fellsell-pro`. The separate user-authorized migration completed only groups 01/02; group 03 was not started. This site's prewritten shared mapping and source hook were premature: source push built the shared Worker but did not publish to this domain.
+
+Removed the premature `.shared-worker.json` and shared GitHub Actions entry; restored this site's original Cloudflare source Git build connection, existing build/deploy commands and the same public URL/GA4/Bing variables. Its old build token had been removed during preparation; a replacement uses the already configured noninteractive API credential. No domain or DNS binding changed, no Worker recreated, and no additional group migrated. Production acceptance follows the restored source build.

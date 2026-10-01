@@ -25,4 +25,4 @@ Four local official Steam screenshots registered in src/data/assets.ts. They ill
 - Old Markdown regression reproduced: `## Heading` immediately followed by body loses the paragraph in the old parser. Shared RichText retains heading, paragraph, lists and tables and rejects unsafe links/HTML.
 - Migration comparison: `npm run validate:v4 -- --compare-base=1e3865deb711be720036738a141a1e32a0e7d83c` checks non-home answer files byte-for-byte, every module once, retained answer context and FAQ, route discovery and review dates.
 - Existing operational validators check static export, ads, search, assets, sitemap, canonical, routes and schema against the new compositions. Obsolete fixed V3 component-path assumptions updated; gates not discarded.
-- Desktop/mobile browser and production acceptance are recorded in GROWTH_LOG.md when complete.
+- Desktop/mobile browser and production acceptance passed; exact source, build and active-version evidence is recorded in GROWTH_LOG.md.

@@ -20,6 +20,16 @@
     }
   },
   {
+    "id": "fixed-achievements-ledger-en-us",
+    "translationKey": "achievements-ledger",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/achievements",
+    "alternates": {
+      "en-US": "/achievements"
+    }
+  },
+  {
     "id": "fixed-beginner-guide-en-us",
     "translationKey": "beginner-guide",
     "locale": "en-US",

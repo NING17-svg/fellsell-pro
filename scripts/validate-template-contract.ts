@@ -4,7 +4,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { buildSitemapEntries } from "../src/app/sitemap";
 import { AssetMedia } from "../src/components/media/AssetMedia";
-import { PageHero } from "../src/components/pages/PageHero";
+import { MerchantArticle } from "../src/components/v4/MerchantArticle";
 import {
   generateStaticParams as generateSearchIndexStaticParams,
 } from "../src/app/search-index/[locale]/route";
@@ -238,11 +238,8 @@ if (filledAdUnits.length > 0 && filledAdUnits.length !== expectedAdUnitKeys.leng
 const componentRoot = resolve(process.cwd(), "src/components");
 const adLayoutSources = {
   adSlot: readFileSync(resolve(componentRoot, "ads/AdSlot.tsx"), "utf8"),
-  home: readFileSync(resolve(componentRoot, "pages/HomePage.tsx"), "utf8"),
-  hub: readFileSync(resolve(componentRoot, "pages/HubPage.tsx"), "utf8"),
-  content: readFileSync(resolve(componentRoot, "pages/ContentPage.tsx"), "utf8"),
-  workspace: readFileSync(resolve(componentRoot, "pages/WorkspacePage.tsx"), "utf8"),
-  rightRail: readFileSync(resolve(componentRoot, "layout/RightRail.tsx"), "utf8"),
+  home: readFileSync(resolve(componentRoot, "v4/MerchantHome.tsx"), "utf8"),
+  content: readFileSync(resolve(componentRoot, "v4/MerchantArticle.tsx"), "utf8"),
   footer: readFileSync(resolve(componentRoot, "layout/Footer.tsx"), "utf8"),
 };
 if (adLayoutSources.adSlot.includes("srcDoc") || adLayoutSources.adSlot.includes("sandbox=")) {
@@ -251,12 +248,12 @@ if (adLayoutSources.adSlot.includes("srcDoc") || adLayoutSources.adSlot.includes
 if (!adLayoutSources.adSlot.includes("appendExecutableAdMarkup")) {
   fail("Adsterra component must preserve executable script injection");
 }
-for (const shell of ["home", "hub", "content", "workspace"] as const) {
+for (const shell of ["home", "content"] as const) {
   if (!adLayoutSources[shell].includes('<AdSlot placement="responsive-banner" />')) {
     fail(`${shell} shell must include the responsive banner slot`);
   }
 }
-if (!adLayoutSources.rightRail.includes('<AdSlot placement="right-rail" />')) {
+if (!adLayoutSources.content.includes('<AdSlot placement="right-rail" />')) {
   fail("right rail must include the 160x600 slot");
 }
 if (!adLayoutSources.footer.includes("<Smartlink />")) {
@@ -532,13 +529,13 @@ for (const page of getAllPages()) {
 const heroFixturePage = getAllPages().find((page) => page.id === "guides");
 if (!heroFixturePage) fail("guide fixture page is missing for review-date rendering validation");
 const pageHeroMarkup = renderToStaticMarkup(
-  createElement(PageHero, { page: heroFixturePage }),
+  createElement(MerchantArticle, { page: heroFixturePage }),
 );
 if (
   !pageHeroMarkup.includes(site.locales[0].ui.lastReviewed) ||
   !pageHeroMarkup.includes(`dateTime="${heroFixturePage.lastReviewed}"`)
 ) {
-  fail("PageHero does not visibly render the locale-aware lastReviewed date");
+  fail("MerchantArticle does not visibly render the locale-aware lastReviewed date");
 }
 
 const searchPages = getIndexablePages();

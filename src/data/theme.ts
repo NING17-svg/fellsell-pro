@@ -1,27 +1,23 @@
 import type { ThemeConfig } from "@/types/theme";
 
-// Theme implements the approved V3 Fell and Sell theme-spec.md:
-// - dark forge-and-merchant palette (deep dungeon stone + warm counter wood + brass accent)
-// - single shared theme across the only launch locale (en-US)
-// - no logo, no remote hotlinks, no images (image-free theme contract)
-// - variants: split-panel home, card-grid hub, reading-right-rail content, full-width workspace
+// This site’s design decisions. Shared V4 components carry no game palette.
 export const theme = {
   mode: "dark",
   tokens: {
-    pageBg: "#171311",
-    surface1: "#1F1A16",
-    surface2: "#2A231D",
-    surface3: "#352B22",
-    surfaceInverse: "#F4E9D2",
-    textPrimary: "#F1E6D2",
-    textMuted: "#B7A48B",
-    textInverse: "#1B1410",
-    textOnAccentPrimary: "#FFFFFF",
-    textLink: "#E2A85B",
+    pageBg: "#102D28",
+    surface1: "#173C34",
+    surface2: "#214B40",
+    surface3: "#2C574A",
+    surfaceInverse: "#F5F7EF",
+    textPrimary: "#F4F4E8",
+    textMuted: "#BECABD",
+    textInverse: "#182E25",
+    textOnAccentPrimary: "#182E25",
+    textLink: "#DAB779",
     focusRing: "#FF9B4D",
-    line: "#3A3028",
-    lineStrong: "#5A4838",
-    accentPrimary: "#B33A2E",
+    line: "#315347",
+    lineStrong: "#59715E",
+    accentPrimary: "#D0A55F",
     accentSecondary: "#D4A24A",
     accentBright: "#F0BC5A",
     statusConfirmed: "#5C9A5E",
@@ -30,7 +26,7 @@ export const theme = {
   },
   typography: {
     headingFamily:
-      "'Cormorant Garamond', Georgia, 'Times New Roman', serif",
+      "'Bitter', Georgia, serif",
     bodyFamily:
       "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
     headingWeight: 700,
@@ -43,7 +39,7 @@ export const theme = {
   },
   density: "comfortable",
   background: {
-    mode: "gradient",
+    mode: "solid",
     overlay: 0,
     position: "center top",
   },

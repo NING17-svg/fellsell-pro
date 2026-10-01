@@ -65,6 +65,7 @@ export interface PageContent {
     assetId?: string;
   };
   quickAnswer: string;
+  quickAnswerContext?: string;
   keyFacts: KeyFact[];
   modules: GuideModule[];
   faqIds: string[];

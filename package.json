@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "validate:template": "tsx scripts/validate-template-contract.ts",
+    "validate:template": "tsx --tsconfig scripts/tsconfig.tests.json scripts/validate-template-contract.ts",
     "validate:content": "tsx scripts/validate-content.ts",
     "validate:rendered-seo": "tsx scripts/validate-rendered-seo.ts",
     "validate:indexnow": "tsx scripts/test-indexnow.ts",
@@ -16,12 +16,15 @@
     "indexnow:submit": "tsx scripts/indexnow.ts submit",
     "routes:manifest": "tsx scripts/print-route-manifest.ts",
     "verify": "npm run typecheck && npm run lint && npm run validate:template && npm run validate:content && npm run validate:indexnow && npm run build && npm run validate:rendered-seo",
-    "preview": "npm run build && wrangler dev"
+    "preview": "npm run build && wrangler dev",
+    "validate:v4": "tsx --tsconfig scripts/tsconfig.tests.json scripts/test-merchant-v4.tsx"
   },
   "dependencies": {
     "next": "15.5.18",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

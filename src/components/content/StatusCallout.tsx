@@ -1,5 +1,5 @@
 import type { CalloutModule } from "@/types/modules";
-import { renderMarkdown } from "@/components/content/markdown";
+import { RichText } from "@/components/content/RichText";
 
 export function StatusCallout({ guideModule }: { guideModule: CalloutModule }) {
   return (
@@ -10,7 +10,7 @@ export function StatusCallout({ guideModule }: { guideModule: CalloutModule }) {
       aria-labelledby={`${guideModule.id}-title`}
     >
       <h2 id={`${guideModule.id}-title`}>{guideModule.title}</h2>
-      {guideModule.body ? renderMarkdown(guideModule.body) : null}
+      <RichText text={guideModule.body} />
     </aside>
   );
 }

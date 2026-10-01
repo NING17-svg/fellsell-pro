@@ -6,6 +6,18 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-01 - V4 merchant field guide rebuild
+
+- User scope: extract How to Fish reusable components to shared V4, then rebuild a different game type manually. Fell & Sell combines dungeons with shop management.
+- Replaced every old V3 visual page shell and three stylesheets. Routes now use MerchantHome/MerchantArticle; all 28 existing URLs stay. Non-home answer source files and FAQ data remain unchanged; original review dates retained.
+- Shared V4 components copied with file hashes in V4_COMPONENTS.json: semantic RichText/modules, grouped/current navigation, directory, progression, chapters, responsive disclosure and answer/context. Per-game assembly, deep-forest/pale reading palette, brass accents, local Bitter font and official Steam screenshots remain in this site.
+- Updated CONTENT_INDEX.md from the actual route inventory; removed stale starter rows.
+- Local verification: typecheck/lint, template/asset/ad/search gate, content/FAQ references, IndexNow tests, static export and rendered SEO all passed. Migration regression compared non-home answers to source base 1e3865deb711be720036738a141a1e32a0e7d83c; every module renders once; answers/context/FAQ and directory remain discoverable. Old Markdown heading+following paragraph loss reproduced, shared RichText retains it.
+- Browser: 1440px home/pricing, 390px home/pricing/achievements. Fonts/images loaded. Search lazy-loads and clicks pricing route. 480px achievement table scrolls within a 333px wrapper; no document overflow. Responsive menu and chapters collapse on mobile. Preview ad/analytics requests blocked for repeatable visual inspection; this does not prove ad delivery/revenue.
+- Mobile interactive acceptance: grouped menu opens, answer context opens, chapter link scrolls to its real target (~34px from top). Header entries are fully visible; home typography reduced on mobile to show more of the game scene.
+- Publication status: source push and official shared Worker verifier pending. This entry is a progress record, not a deployment claim.
+
+
 ### 2026-10-01 - Fold states each fact once and modules render as structure
 
 - Task: Stop the hero subtitle and the Quick Answer from saying the same thing on the same screen, remove a repository-internal path published as a source, and render authored Markdown in module bodies.
